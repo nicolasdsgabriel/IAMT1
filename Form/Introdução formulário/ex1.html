@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio</title>
+</head>
+<body>
+    <h1>Exercício Avaliativo</h1>
+    <form action="processa.php" method="post">
+        <label for="nome">
+            Nome:
+        </label>
+        <input type="text" name="nome" id="nome" maxlength="30" required="required"/>
+        <label for="end">
+            Endereço:
+        </label>
+        <input type="text" name="end" id="end" maxlength="50" required="required"/>
+        <label for="tel">
+            Telefone:
+        </label>
+        <input type="text" name="tel" id="tel" maxlength="16" required="required" placeholder="(00)00000-00-00"/>
+        <label for="senha">
+            Senha:
+        </label>
+        <input type="password" name="senha" id="senha" maxlength="12" required="required"/>
+        <input type="submit" name="submeter" value="Entrar" />
+        <input type="reset" name="resetar" value="Apagar"/>
+    </form>
+</body>
+</html>

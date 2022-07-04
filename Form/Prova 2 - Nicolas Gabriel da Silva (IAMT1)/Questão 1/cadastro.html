@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+    <title>Cadastro de alunos</title>
+	  <meta charset="UTF-8" />
+	  <link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>
+	
+  <body>
+    <section>
+	    <h1 id="titulo">Faça seu cadastro</h1>
+	    <!--Completar aqui-->
+      <form action="processa.php" method="post" enctype="multipart/form-data">
+        <label for="nome">
+          Nome:
+        </label>
+        <input type="text" name="nome" id="nome" required="required" />
+        <label for="nascimento">
+          Data de nascimento:
+        </label>
+        <input type="date" name="data" id="nascimento" min="1910-01-02" />
+        <label for="ingresso">
+          Mês e ano de ingresso:
+        </label>
+        <input type="month" name="ingresso" id="ingresso" />
+        <label for="foto">
+          Foto:
+        </label>
+        <input type="file" name="foto" id="foto" accept="image/*" />
+        <label for="email">
+          E-mail:
+        </label>
+        <input type="email" name="email" id="email" multiple="multiple" value="aluno@mail.com" />
+        <label for="curso">
+          Nome do curso realizado:
+        </label>
+        <input type="text" name="curso" id="curso" list="sugestoes" required="required" />
+        <datalist id="sugestoes">
+          <option>Técnico em Informática</option>
+          <option>Técnico em Mecatrônica</option>
+          <option>ADS</option>
+          <option>Engenharia Mecânica</option>
+        </datalist>
+        <fieldset>
+          <legend>Marque o tipo do curso realizado:</legend>
+          <label for="extensao">
+            Extensão
+          </label>
+          <input type="radio" name="tipoCurso" id="extensao" value="Extensão" />
+          <label for="tec">
+            Técnico
+          </label>
+          <input type="radio" name="tipoCurso" id="tec" value="Técnico" />
+          <label for="graduar">
+            Graduação
+          </label>
+          <input type="radio" name="tipoCurso" id="graduar" value="Graduação" />
+        </fieldset>
+        <input type="submit" name="submeter" value="Enviar" />
+      </form>
+	  </section>
+  </body>
+
+</html>

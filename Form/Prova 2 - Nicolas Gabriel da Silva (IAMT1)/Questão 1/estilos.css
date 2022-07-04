@@ -1,0 +1,42 @@
+section {
+  border: 1px solid #000;
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section #titulo {
+  margin: 0;
+  text-align: center;  
+}
+
+input[type=text],
+input[type=date],
+input[type=month],
+input[type=file],
+input[type=email],
+input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #000;
+}
+
+input[type=file] {
+  background-color: #fff;
+}
+
+input[type=submit] {
+  cursor: pointer;	
+}
+
+fieldset {
+  border: 1px solid #000;
+  margin: 8px 0;
+}
+
+* {
+  box-sizing: border-box;	
+}

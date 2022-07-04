@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Form de login</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+	</head>
+	<body>
+		<section>
+			<h1>Webmail</h1>
+			<!--completar aqui-->
+			<form action="processa.php" method="post"> <!--action define para onde as informções do formulário irão para serem, processadas-->
+				<label for="login"> <!--label é a tag para rótulo--><!--for denota para onde o label aponta (id)-->
+					Login:
+				</label>
+				<input type="text" name="login" id="login" /> <!--input é a tag que permite a ENTRADA de dados, representa quase todos os tipos de elementos de campos de formulários-->	
+				<label for="senha">
+					Senha:
+				</label>
+				<input type="password" name="senha" id="senha"/> <!--type password mascara o valor inserido no campo-->
+				<input type="submit" name="submeter" value="Entrar" /> <!--atributo value representa o valor do botão-->
+				<input type="reset" name="resetar" value="Apagar"/>
+			</form>
+		</section>
+	</body>
+</html>

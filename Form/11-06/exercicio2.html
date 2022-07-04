@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+<body>
+    <section>
+        <h1>Dados do veículo</h1>
+        <form method="post" action="processa.php">
+            <label for="marca">
+                Marca:
+            </label>
+            <input type="text" name="marca" id="marca" maxlength="10" />
+            <label for="motor">
+                Motor:
+            </label>
+            <select name="motor" id="motor">
+                <option>1.0</option>
+                <option>1.4</option>
+                <option>1.6</option>
+                <option>1.8</option>
+                <option>2.0</option>
+            </select>
+            <fieldset>
+                <legend>  
+                    Câmbio:
+                </legend>
+                <label for="automatico">
+                    Automático
+                </label>
+                <input type="radio" name="cambio" id="automatico" value="automático" />
+                <label for="manual">
+                    Manual
+                </label>
+                <input type="radio" name="cambio" id="manual" value="manual" />
+            </fieldset>
+            <label for="descricao">
+                Descrição do veículo:
+            </label>
+            <textarea name="area" id="descricao" >
+          
+            </textarea>
+            <label for="fabricacao">
+                Data de fabricação:
+            </label>
+            <input type="date" name="fabricacao" id="fabricacao" min="1990-01-01" />
+            <label for="aquisicao">
+                Data de fabricação:
+            </label>
+            <input type="datetime-local" name="aquisicao" id="aquisicao" />
+            <label for="semana">
+                Semana de aquisição:
+            </label>
+            <input type="week" name="semana" id="semana" />
+            <label for="preco">
+                Preço unitário:
+            </label>
+            <input type="number" name="preco" id="preco" min="0" step="0.01" />
+            <input type="submit" name="submeter" value="Enviar" />
+            <input type="reset" name="resetar" value="Resetar" />
+        </form>
+    </section>
+</body>
+</html>

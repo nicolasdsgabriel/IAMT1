@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Exercicio 1</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+<body>
+   <section>
+       <h1>Cadastro</h1>
+       <form method="post" action="processa.php" enctype="multipart/form-data">
+           <label for="nome">
+               Nome:
+           </label>
+           <input type="text" name="nome" id="nome" required="required"/>
+           <label for="senha">
+               Senha:
+           </label>
+           <input type="password" name="senha" id="senha" required="required" maxlength="12" />
+           <label for="nascimento">
+               Data de nascimento:
+           </label>
+           <input type="month" name="nascimento" id="nascimento" min="1900-01" max="2002-12" />
+           <label for="filhos">
+               Quantidade de filhos:
+           </label>
+           <input type="number" name="filhos" id="filhos" min="0" max="10" step="1" required="required" />
+           <label for="foto">
+               Foto:
+           </label>
+           <input type="file" name="foto" id="foto" accept="image/*" />
+           <label for="saber">
+               Como ficou sabendo de nosso site?
+           </label>
+           <input type="text" name="saber" id="saber" list="sugestoes" />
+           <datalist id="sugestoes">
+               <option>Redes sociais</option>
+               <option>Fóruns</option>
+               <option>Indicação</option>
+               <option>Jornal</option>
+           </datalist>
+           <label for="email">
+               Deseja receber notícias pelo e-mail?
+           </label>
+           <select name="email" id="email">
+                <option>Sim</option>
+                <option>Não</option>
+           </select>
+           <input type="submit" name="submeter" value="Enviar" />
+           <input type="reset" name="resetar" value="Resetar" />
+       </form>
+   </section> 
+</body>
+</html>

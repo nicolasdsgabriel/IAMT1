@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Cursos no IFSP-ARQ</title>
+	</head>
+	<body>
+		<h1>
+			Cursos superiores e técnicos oferecidos pelo Câmpus Araraquara
+		</h1>
+		
+		<section>
+			<h2>Menu</h2>
+			<p>
+				<a href="#ul">Lista não ordenada</a>
+			</p>
+			<p>
+				<a href="#ol">Lista ordenada</a>
+			</p>
+			<p>
+				<a href="#al">Listas aninhadas</a>
+			</p>
+			<p>
+				<a href="#alx">Listas aninhadas - Exercício</a>
+			</p>
+			<p>
+				<a href="#dl">Lista de descrição</a>
+			</p>
+			<p>
+				<a href="#dlx">Lista de descrição - Exercício</a>
+			</p>
+		</section>
+
+		<!--Lista não ordenada-->
+		<section>
+			<h2 id="ul">Lista não ordenada</h2>
+			<ul> <!--tag para listas não ordenadas (Unorded List), dentro de uma ul só pode ter li-->
+				<li> <!--usa-se essa tag para cada item da lista-->
+					Técnico de Informártica Concomitante
+				</li>
+				<li>
+					Técnico de Informártica Integrado
+				</li>
+				<li>
+					Técnico em Mecatrónica Concomitante
+				</li>
+				<li>
+					Técnico em Mecânica Integrado
+				</li>
+				<li>
+					ADS
+				</li>
+				<li>
+					Licenciatura em Matemática
+				</li>
+				<li>
+					Engenharia Mecânica
+				</li>
+			</ul>
+			<a href="#">Topo</a>
+		</section>
+		
+		<hr /> <!--Cria uma barra horizontal na página-->
+		
+		<!--Lista ordenada (conforme o ano de criação de cada curso - do mais antigo para o mais novo)-->
+		<section>
+			<h2 id="ol">Lista ordenada</h2>
+			<ol type="I"> <!--Ordered List--> <!--atributo type troca o tipo de ordenação da lista--> <!--atributo reversed inverte a ordem da lista (não exige valor)-->
+				<li>
+					Técnico de Informártica Concomitante (2010)
+				</li>
+				<li>
+					Técnico em Mecatrónica Concomitante (2010)
+				</li>
+				<li>
+					Licenciatura em Matemática (2011)
+				</li>
+				<li>
+					ADS (2012)
+				</li>
+				<li>
+					Técnico de Informártica Integrado (2016)
+				</li>
+				<li>
+					Técnico em Mecânica Integrado (2016)
+				</li>
+				<li>
+					Engenharia Mecânica (2016)
+				</li>
+			</ol>
+			<a href="#">Topo</a>
+		</section>
+		
+		<hr />
+		
+		<!--Criando sublistas para agrupar os cursos conforme o nível (técnico ou superior)-->
+		<section>
+			<h2 id="al">Listas aninhadas</h2>
+			<ul>
+				<li>
+					Cursos Técnicos
+					<ol>
+						<li>
+							Técnico de Informártica Concomitante
+						</li>
+						<li>
+							Técnico de Informártica Integrado
+						</li>
+						<li>
+							Técnico em Mecatrónica Concomitante
+						</li>
+						<li>
+							Técnico em Mecânica Integrado
+						</li>
+					</ol>
+				</li>
+				<li>
+					Cursos Superiores
+					<ol>
+						<li>
+							ADS
+						</li>
+						<li>
+							Licenciatura em Matemática
+						</li>
+						<li>
+							Engenharia Mecânica
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<a href="#">Topo</a>
+		</section>
+		
+		<hr />
+		
+		<!--Exercício: Criando mais um agrupamento para os cursos técnicos (concomitante ou integrado)-->
+		<section>
+			<h2 id="alx">Listas aninhadas - Exercício</h2>
+			<ul>
+				<li>
+					Cursos Técnicos
+					<ul>
+						<li>
+							Cursos Técnicos Concomitantes
+							<ol type="a">
+								<li>
+									Técnico em Informártica
+								</li>
+								<li>
+									Técnico em Mecatrônica
+								</li>
+							</ol>
+						</li>
+						<li>
+							Curos Técnicos Integrados
+							<ol type="a">
+								<li>
+									Técnico em Informártica
+								</li>
+								<li>
+									Técnico em Mecânica
+								</li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+				<li>
+					Curos Superiores
+					<ol type="a">
+						<li>
+							Licenciatura em Matemática
+						</li>
+						<li>
+							ADS
+						</li>
+						<li>
+							Engenharia Mecânica
+						</li>
+					</ol><a href="#">Topo</a>
+				</li>
+			</ul>
+			<a href="#">Topo</a>
+		</section>
+		
+		<hr />
+		
+		<section>
+			<h2 id="dl">Lista de descrição - Algumas entidades em HTML</h2>
+			<dl> <!--Description List--> <!--Dentro de uma dl somente dois elementos são permitidos (dt - termos, dd - descrição)-->
+				<dt>
+					&amp;lt;
+				</dl>
+				<dd>
+					Entidade que permite exibir o caractere &lt;
+				</dd>
+				<dt>
+					&amp;gt;
+				</dt>
+				<dd>
+					Entidade que permite exibir o caractere &gt;
+				</dd>
+				<dt>
+					&amp;amp;
+				</dt>
+				<dd>
+					Entidade que permite exibir o caractere &amp;
+				</dd>
+			</dl>
+			<a href="#">Topo</a>
+		</section>
+		
+		<hr />
+
+		<section>
+			<h2 id="dlx">
+				Listas de descrição - Exercício
+			</h2>
+			<dl>
+				<dt>
+					HTML
+				</dt>
+				<dd>
+					<ol type="a">
+						<li>
+							Linguagem de marcação de hipertexto
+						</li>
+						<li>
+							Criada no ano de 1991
+						</li>
+					</ol>
+				</dd>
+			</dl>
+			<dt>
+				CSS
+			</dt>
+			<dd>
+				<ol type="a">
+					<li>
+						Linguagem para a estilização de conteúdos
+					</li>
+					<li>
+						Criada no ano de 1996
+					</li>
+				</ol>
+			</dd>
+			<dt>
+				JAVASCRIPT
+			</dt>
+			<dd>
+				<ol type="a">
+					<li>
+						Linguagem padrão de script para a web
+					</li>
+					<li>
+						Criada no ano de 1995
+					</li>
+					<li>
+						Permite definir comportamentos em páginas web
+					</li>
+				</ol>
+		<a href="#">Topo</a>
+			</dd>
+		</section>
+	</body>
+</html>

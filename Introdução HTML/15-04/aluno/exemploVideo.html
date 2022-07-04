@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<title>Exemplo de vídeo</title>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<h1>Exemplo de vídeo</h1>
+		<!-- 
+			Video formats: Only MP4, WebM, and Ogg video are supported by the HTML5 standard.
+			
+			Tipos
+			MP4 => video/mp4
+			WebM => video/webm
+			Ogg => video/ogg
+		-->
+		<video controls width="320" height="240"> <!--controls adiciona controles ao video-->
+			<source src="videos/movie.ogg" type="video/ogg" /> <!--type indica ao navegador o formato do vídeo-->
+			<source src="videos/movie.webm" type="video/webm" /> <!--o navegador usa um metodo semelhante as condições para saber qual video exibir, ele caminha pelas tags até atingir um video existente-->
+			<source src="videos/movie.mp4" type="video/mp4" />
+			Seu navegador não suporta nenhum dos formatos considerados
+		</video>
+	</body>
+</html>

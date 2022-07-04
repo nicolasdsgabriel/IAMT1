@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Formulário de cadastro</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>	
+  <body>
+    <section>
+	  <h2>Faça seu cadastro</h2>
+    <!--
+      Para que um formulário permita o envio de um arquivo ele precisa seguir 2 regras:
+      1 - o método precisa ser post;
+      2 - enctype="multipart/from-data" para que o form envie cada dado separadamente, sem concatena-los;
+    -->
+    <form action="processa.php" method="post" enctype="multipart/form-data" >
+      <label for="nome">
+        Nome:
+      </label>
+      <input type="text" name="nome" id="nome" required="required" />
+      <label for="cv">
+        Envie seu currículo:
+      </label>
+      <input type="file" name="cv" id="cv" accept="application/pdf"  multiple/> 
+      <!--file é o tipo de campo que recebe arquivos-->
+      <!--accept é uma orientação ao usuário, mostrará apenas os arquivos do tipo especificado-->
+      <!--
+        image/*
+        video/*
+        audio/*
+      -->
+      <!--multiple permite a submissão de vários arquivos-->
+      <fieldset> <!--tag para agrupar campos de um formulário-->
+        <legend>
+          Informe seu estado civil:
+        </legend>
+        <input type="radio" name="civil" id="solteiro" value="solteiro" checked="checked"/> <!--checked marca uma opção como default-->
+        <label for="solteiro"> 
+          Solteiro
+        </label>
+        <input type="radio" name="civil" id="casado" value="casado" />
+        <label for="casado">
+          Casado
+        </label>
+        <input type="radio" name="civil" id="divorciado" value="divorciado" />
+        <label for="divorciado">
+          Divorciado
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Marque seus interesses:
+      </legend>
+      <input type="checkbox" name="interesses" id="economia" value="eco" />
+      <label for="economia">
+        Economia
+      </label>
+      <input type="checkbox" name="interesses" id="politica" value="pol" />
+      <label for="politica">
+        Política
+      </label>
+      <input type="checkbox" name="interesses" id="esportes" value="esp" />
+      <label for="esportes">
+        Esportes
+      </label>
+    </fieldset>
+    <label for="descricao">
+      Descreva-se aqui:
+    </label>
+    <textarea name="area" id="descricao" >
+
+    </textarea>
+      <input type="submit" name="enviar" value="Enviar" />
+      <input type="reset" name="resetar" value="Resetar" />
+    </form>
+	</section>
+  </body>
+</html>

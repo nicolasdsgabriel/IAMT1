@@ -1,0 +1,61 @@
+/*Especifique aqui as regras para estilização da lista*/
+ol, ul{
+    list-style-type: disc;
+    margin: 0 auto;
+    width: 35%;
+}
+ol{
+    list-style-type: upper-alpha; 
+}
+section{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 35%;
+}
+section, h1{
+    text-align: center;
+}
+/*Seletores a serem utilizados*/
+/*
+ol
+ol ul
+section
+section h1
+*/
+
+/*Declarações a serem utilizadas*/
+/*
+border: 1px solid black;
+list-style-type: upper-alpha;
+list-style-type: disc;
+margin: 0 auto;
+text-align: center;
+width: 35%;
+*/
+
+
+/*Especifique aqui as regras para estilização da tabela*/
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 35%;
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+}
+/*Seletores a serem utilizados*/
+/*
+table
+th, td
+*/
+
+/*Declarações a serem utilizadas*/
+/*
+border: 1px solid black; (deve aparecer 2 vezes)
+border-collapse: collapse;
+margin: 0 auto;
+text-align: center;
+width: 35%;
+*/

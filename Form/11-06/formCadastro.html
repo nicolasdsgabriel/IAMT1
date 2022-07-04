@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Formulário de cadastro</title>
+	  <meta charset="UTF-8" />
+	  <link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>	
+  <body>
+    <section>
+	    <h1>Faça seu cadastro</h1>
+	    <form method="post" action="processa.php" >
+        <label for="nome">
+          Nome:
+        </label>
+        <input type="text" name="nome" id="nome" />
+        <label for="uf">
+          Unidade Federativa:
+        </label>
+        <select name="uf" id="uf"> <!--tag select cria um campo com várias opções-->
+          <optgroup label="Sudeste"> <!--tag optgroup agrupa as options do select, o atributo label é o rótulo do agrupamento-->
+            <option value="SP">São Paulo</option> <!--option denota as opções do campo select-->
+            <option value="RJ">Rio de Janeiro</option>
+          </optgroup>
+          <optgroup label="Nordeste">
+            <option value="BA">Bahia</option> <!--value representa o valor que será enviado para processamento-->
+            <option value="PE">Pernambuco</option>
+          </optgroup>
+          <optgroup label="Centro-Oeste">
+            <option value="DF">Destrito Federal</option>
+          </optgroup>
+        </select>
+        <label for="filhos">
+          Filhos:
+        </label>
+        <input type="number" name="filhos" id="filhos" min="0" max="10" step="0.1" /> <!--atributo min determina o mínimo aceito pelo campo e o max o máximo, step permite definir a escala de intervalos-->
+        <label for="data">
+          Data de nascimento:
+        </label>
+        <input type="date" name="data" id="data" min="1900-01-02" />
+        <label for="sal">
+          Salário:
+        </label>
+        <input type="number" name="sal" id="sal" step="0.01" min="1500" />
+        <label for="email">
+          E-mail:
+        </label>
+        <input type="email" name="email" id="email"  />
+        <label for="idioma">
+          Idioma preferido:
+        </label>
+        <input type="text" name="idioma" id="idioma" list="sugestoes" /> <!--atributo list vincula a lista ao campo pelo id-->
+        <datalist id="sugestoes"> <!--datalist só faz sentido quando ligado a um campo, é uma lista de sugestões-->
+          <option>Inglês</option>
+          <option>Francês</option>
+          <option>Espanhol</option>
+          <option>Japonês</option>
+        </datalist>
+        <input type="submit" name="submeter" value="Enviar" />
+      </form>
+	  </section>
+  </body>
+</html>
